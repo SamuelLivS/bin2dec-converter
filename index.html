@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/binary-code.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Bin2Dec Converter</title>
+</head>
+
+<body>
+    <main>
+        <section class="section-main">
+            <h1>Conversor binário para decimal</h1>
+            <div class="converter-div">
+                <div class="input-group">
+                    <input oninput="validadeInput(this)" class="inputs" type="text" id="binary" placeholder="Binário">
+                    <label class="sr-only" for="binary">Binário</label>
+                </div>
+                <div class="input-group">
+                    <input class="inputs" type="text" id="decimal" placeholder="Decimal">
+                    <label class="sr-only" for="decimal">Decimal</label>
+                </div>
+                <button onclick="convertBinToDec()">Converter</button>
+                <div>
+                    <p id="error"></p>
+                </div>
+            </div>
+        </section>
+        <section class="section-image">
+            <img src="./assets/undraw_freelancer.svg" title="Freelancer" alt="Desenho de um homem branco, sentado no chão, com um computador portátio sobre as pernas, uma estante com livros ao fundo.">
+        </section>
+        <div class="burble top"></div>
+        <div class="burble bottom"></div>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
